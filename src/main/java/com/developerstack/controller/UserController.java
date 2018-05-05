@@ -21,12 +21,12 @@ public class UserController {
 		return new ResponseEntity<List<User>>(getUsers(), HttpStatus.OK);
 	}
 	
-	@RequestMapping(path="/user/{id}", method = RequestMethod.GET)
+	/*@RequestMapping(path="/user/{id}", method = RequestMethod.GET)
 	public ResponseEntity<User>  listUser(@PathVariable(value = "id") String id){
 		return new ResponseEntity<User>(getUsers().stream().filter(user -> user
 				.getId().equals(id)).findFirst().orElse(null), HttpStatus.OK);
 		
-	}
+	}*/
 	
 	@RequestMapping(path="/user", method = RequestMethod.POST)
 	public ResponseEntity<String>  listUser(@RequestBody User user){
