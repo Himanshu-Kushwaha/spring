@@ -1,1 +1,1 @@
-web: java -Dserver.port=9797-jar target/*.jar
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* Application
